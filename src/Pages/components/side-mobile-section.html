@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" />
+    <style>
+        .side-iphone-section .span {
+            font-weight: 600;
+        }
+
+        .side-iphone-section .dont-just-get-container,
+        .side-iphone-section .download-the-betimeful {
+            align-self: stretch;
+            position: relative;
+            line-height: 170%;
+        }
+
+        .side-iphone-section .download-the-betimeful {
+            font-size: 0.69rem;
+            line-height: 150%;
+            color: #455a64;
+        }
+
+        .side-iphone-section .dont-just-get-inspired-live-parent {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0.13rem;
+        }
+
+        .side-iphone-section .frame-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 8px;
+            background: linear-gradient(135deg,
+                    rgba(124, 58, 237, 0.2),
+                    rgba(88, 33, 182, 0.2));
+            width: 16rem;
+            height: 20.48rem;
+        }
+
+        .side-iphone-section .iphone-14-pro {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            left: 0;
+            top: 1.5rem;
+            transform: scale(1.454);
+        }
+
+        .side-iphone-section .wrapper-iphone-14-pro {
+            position: relative;
+            width: 12.8rem;
+            height: 26.35rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 0;
+            margin-top: -8rem;
+        }
+
+        .side-iphone-section .frame-item {
+            position: relative;
+            border-radius: 50%;
+            width: 1.17rem;
+            height: 1.17rem;
+            object-fit: cover;
+        }
+
+        .side-iphone-section .frame-container,
+        .side-iphone-section .notifications-inner {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .side-iphone-section .notifications-inner {
+            border-radius: 6.24px;
+            background-color: #fff;
+            align-items: flex-start;
+            padding: 0.16rem 0.19rem;
+        }
+
+        .side-iphone-section .label-more-notifications,
+        .side-iphone-section .label-title {
+            align-self: stretch;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .side-iphone-section .label-title {
+            letter-spacing: -0.01em;
+            background: linear-gradient(rgba(255, 255, 255, 0.7),
+                    rgba(255, 255, 255, 0.7)),
+                rgba(255, 255, 255, 0.5);
+        }
+
+        .side-iphone-section .label-more-notifications {
+            font-size: 0.5rem;
+            line-height: 150%;
+            font-weight: 600;
+            background: linear-gradient(rgba(255, 255, 255, 0.7),
+                    rgba(255, 255, 255, 0.7)),
+                rgba(255, 255, 255, 0.2);
+        }
+
+        .side-iphone-section .label-title-parent {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0.13rem;
+        }
+
+        .side-iphone-section .notifications,
+        .side-iphone-section .wrapper-iphone-14-pro-parent {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .side-iphone-section .notifications {
+            margin: 0 !important;
+            top: 7.73rem;
+            left: calc(50% - 116px);
+            border-radius: 8.44px;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(100px);
+            width: 14.5rem;
+            flex-shrink: 0;
+            padding: 0.4rem;
+            box-sizing: border-box;
+            gap: 0.4rem;
+            z-index: 1;
+        }
+
+        .side-iphone-section .wrapper-iphone-14-pro-parent {
+            top: 0.95rem;
+            left: 0.32rem;
+            gap: 0.32rem;
+        }
+
+        .side-iphone-section .frame-wrapper {
+            position: absolute;
+            top: 0.56rem;
+            left: calc(50% - 108px);
+            width: 13.44rem;
+            height: 23.31rem;
+        }
+
+        .side-iphone-section .rectangle-parent {
+            position: relative;
+            width: 16rem;
+            height: 14.94rem;
+            overflow: hidden;
+            flex-shrink: 0;
+            font-size: 0.69rem;
+        }
+
+        .side-iphone-section .frame-group {
+            position: absolute;
+            top: 2.44rem;
+            left: 1.88rem;
+            border-radius: 16px;
+            background-color: #fff;
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+            width: 18.63rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .side-iphone-section .simply-scan-this {
+            align-self: stretch;
+            position: relative;
+            letter-spacing: 0.01em;
+            line-height: 150%;
+            font-weight: 600;
+        }
+
+        .side-iphone-section .qr-code-child {
+            position: relative;
+            width: 4.35rem;
+            height: 4.35rem;
+            object-fit: cover;
+        }
+
+        .side-iphone-section .qr-code {
+            border-radius: 2.9px;
+            background-color: rgba(140, 82, 255, 0.5);
+            box-shadow: 0 1.4204562902450562px 4.62px rgba(0, 0, 0, 0.06),
+                0 6.283545970916748px 15.23px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 0.32rem;
+        }
+
+        .side-iphone-section .icons8-android-1 {
+            position: relative;
+            width: 0.83rem;
+            height: 0.83rem;
+            overflow: hidden;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+
+        .side-iphone-section .for-andriod {
+            position: relative;
+            letter-spacing: 0.01em;
+            line-height: 150%;
+            font-weight: 600;
+        }
+
+        .side-iphone-section .icons8-android-1-parent {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0.26rem;
+        }
+
+        .side-iphone-section .qr-code-parent,
+        .side-iphone-section .qr-code1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .side-iphone-section .qr-code-parent {
+            flex-shrink: 0;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .side-iphone-section .qr-code1 {
+            border-radius: 2.9px;
+            background-color: rgba(140, 82, 255, 0.5);
+            box-shadow: 0 1.4204564094543457px 4.62px rgba(0, 0, 0, 0.06),
+                0 6.283546447753906px 15.23px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            align-items: flex-start;
+            padding: 0.32rem;
+        }
+
+        .side-iphone-section .frame-div {
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.57rem;
+            color: #263238;
+        }
+
+        .side-iphone-section .simply-scan-this-qr-code-to-ge-parent {
+            position: absolute;
+            top: 25.63rem;
+            left: 2.19rem;
+            border-radius: 16px;
+            background-color: #fff;
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+            width: 18rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 1rem;
+            gap: 1.25rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: rgba(38, 50, 56, 0.75);
+        }
+
+        .side-iphone-section .frame-parent {
+            position: relative;
+            background-color: #fff;
+            width: 100%;
+            height: 39.44rem;
+            overflow: hidden;
+            text-align: left;
+            font-size: 0.88rem;
+            color: #263238;
+            font-family: Lato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side-iphone-section ">
+        <div class="frame-parent">
+            <div class="frame-group">
+                <div class="dont-just-get-inspired-live-parent">
+                    <div class="dont-just-get-container">
+                        <b>Don’t just get inspired, live an inspiring life</b>
+                        <span class="span"> </span>
+                    </div>
+                    <div class="download-the-betimeful">
+                        Download the BeTimeful app for free to live a less scrolling and
+                        more living life!
+                    </div>
+                </div>
+                <div class="rectangle-parent">
+                    <div class="frame-child"></div>
+                    <div class="frame-wrapper">
+                        <div class="wrapper-iphone-14-pro-parent">
+                            <div class="wrapper-iphone-14-pro">
+                                <img class="iphone-14-pro" alt="" src="./public/iphone-14-pro@2x.png" />
+                            </div>
+                            <div class="notifications">
+                                <div class="notifications-inner">
+                                    <div class="frame-container">
+                                        <div class="frame-container">
+                                            <img class="frame-item" alt="" src="./public/ellipse-76@2x.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label-title-parent">
+                                    <b class="label-title">Your daily spark ✨</b>
+                                    <div class="label-more-notifications">
+                                        Embrace today's challenges as opportunities, and watch how
+                                        your strength unfolds. You've got this!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simply-scan-this-qr-code-to-ge-parent">
+                <div class="simply-scan-this">
+                    Simply scan this QR code to get the App 📱
+                </div>
+                <div class="frame-div">
+                    <div class="qr-code-parent">
+                        <div class="qr-code">
+                            <img class="qr-code-child" alt="" src="./public/frame-9@2x.png" />
+                        </div>
+                        <div class="icons8-android-1-parent">
+                            <img class="icons8-android-1" alt="" src="./public/icons8android-1@2x.png" />
+
+                            <div class="for-andriod">For Andriod</div>
+                        </div>
+                    </div>
+                    <div class="qr-code-parent">
+                        <div class="qr-code1">
+                            <img class="qr-code-child" alt="" src="./public/frame-9@2x.png" />
+                        </div>
+                        <div class="icons8-android-1-parent">
+                            <img class="icons8-android-1" alt="" src="./public/icons8apple-1@2x.png" />
+
+                            <div class="for-andriod">For iOS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
